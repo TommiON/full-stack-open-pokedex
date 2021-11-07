@@ -35,3 +35,4 @@ jobs:
           heroku_email: "tommi.niittymies@gmail.com"
           healthcheck: "https://fullstack11tom.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
