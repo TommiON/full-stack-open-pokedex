@@ -45,5 +45,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: ${{ secrets.DEFAULT_BUMP }}
-          COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
-        if: contains(COMMIT_MESSAGES, "bump")
+        if: contains(${{ toJson(github.event.commits.*.message) }}, "bump")
