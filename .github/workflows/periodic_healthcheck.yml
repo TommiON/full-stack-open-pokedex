@@ -2,7 +2,7 @@ name: periodic health check
 
 on:
   schedule:
-   - cron:  '15 20 * * *'
+   - cron:  '15 20 1 * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
